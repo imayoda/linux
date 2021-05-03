@@ -1105,6 +1105,14 @@ const struct dmi_system_id touchscreen_dmi_table[] = {
 		},
 	},
 	{
+                /* Mediacom WinPad 7.0 W700 (same hw as Wintron surftab 7") */
+                .driver_data = (void *)&trekstor_surftab_wintron70_data,
+                .matches = {
+                        DMI_MATCH(DMI_SYS_VENDOR, "MEDIACOM"),
+                        DMI_MATCH(DMI_PRODUCT_NAME, "WinPad 7 W10 - WPW700"),
+                },
+        },
+	{
 		/* MP Man Converter 9 */
 		.driver_data = (void *)&mpman_converter9_data,
 		.matches = {
